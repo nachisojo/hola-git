@@ -43,3 +43,18 @@ a{
     font-size: 18px;
     margin-left: 5px;
 }
+.mensajemail{
+    color: red;
+}
+.mensajecontra{
+    color: red;
+}
+footer{
+    background-color: brown;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
