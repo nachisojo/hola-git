@@ -39,20 +39,21 @@ fetch('https://dummyjson.com/recipes')
         return response.json();
     })
     
-    .then(function (data){    
+    .then(function (data){   
+        let containerrecetas = document.querySelector(".containerrecetas");
+        let contenido = '';
         for (let i=0; i < 10; i++){
             let comida = data.recipes[i];
             
-            let contenido = 
+            contenido +=
                 `<div class = "contenidorec">
                     <img src = ${comida.image}/>
                     <p class = "nombre"> ${comida.name} </p>
                     <P class = "dificultad"> Nivel de dificultad: ${comida.difficulty} </p>
                     <p class = "info"> <a href=comida.html?id=${comida.id} Ver más </a></p>
-                `;
-            comida += contenido;
+                </div>`;
         }
-        containerrecetas.innerHTML = comida;
+        containerrecetas.innerHTML = contenido;
 
     })
     .catch(function (error){
