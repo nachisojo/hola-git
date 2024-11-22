@@ -92,3 +92,7 @@ footer{
 .contenidorec img{
     width: 100%;
 }
+.botonlogin{
+    text-decoration: none;
+    color: black;
+}
