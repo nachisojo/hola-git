@@ -45,7 +45,7 @@ a{
     color: red;
 }
 footer{
-    background-color: brown;
+    background-color: rgba(150,75,0, 0.5);
     height: 70px;
     width: 100vw;
     display: flex;
@@ -61,4 +61,17 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.articulosprincipales{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(64,64,64, 0.2);
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    
+}
+.tituloarticulos{
+    text-align: center;
+    margin-top: 50px;
 }

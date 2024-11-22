@@ -33,7 +33,8 @@ formuhome.addEventListener("submit",function(event){
         window.location.href = "categoria.html";
         return;
     }
-})  
+}) 
+let conteiner = document.querySelector(".containerrecetas") 
 fetch('https://dummyjson.com/recipes')
     .then(function (response){
         return response.json();
@@ -41,19 +42,20 @@ fetch('https://dummyjson.com/recipes')
     
     .then(function (data){   
         let containerrecetas = document.querySelector(".containerrecetas");
-        let contenido = '';
+        let contenidos = '';
         for (let i=0; i < 10; i++){
             let comida = data.recipes[i];
             
-            contenido +=
-                `<div class = "contenidorec">
-                    <img src = ${comida.image}/>
+            contenido =
+                `<article class = "contenidorec">
+                    <img src = ${comida.image}>
                     <p class = "nombre"> ${comida.name} </p>
                     <P class = "dificultad"> Nivel de dificultad: ${comida.difficulty} </p>
-                    <p class = "info"> <a href=comida.html?id=${comida.id} Ver más </a></p>
-                </div>`;
+                    <p class = "info"> <a href=detalle.html?id=${comida.id}> Ver más </a></p>
+                </article>`;
+            contenidos += contenido
         }
-        containerrecetas.innerHTML = contenido;
+        containerrecetas.innerHTML = contenidos;
 
     })
     .catch(function (error){
