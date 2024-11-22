@@ -75,3 +75,8 @@ footer{
     text-align: center;
     margin-top: 50px;
 }
+.contenidorec{
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+}
