@@ -34,7 +34,7 @@ formuhome.addEventListener("submit",function(event){
         return;
     }
 }) 
-let conteiner = document.querySelector(".containerrecetas") 
+ 
 fetch('https://dummyjson.com/recipes')
     .then(function (response){
         return response.json();
@@ -46,12 +46,12 @@ fetch('https://dummyjson.com/recipes')
         for (let i=0; i < 10; i++){
             let comida = data.recipes[i];
             
-            contenido =
-                `<article class = "contenidorec">
+            let contenido =
+                `<article class="contenidorec">
                     <img src = ${comida.image}>
                     <p class = "nombre"> ${comida.name} </p>
                     <P class = "dificultad"> Nivel de dificultad: ${comida.difficulty} </p>
-                    <p class = "info"> <a href=detalle.html?id=${comida.id}> Ver más </a></p>
+                    <p class = "info"> <a class="btn" href="detalle.html?id=${comida.id}"> Ver más </a></p>
                 </article>`;
             contenidos += contenido
         }

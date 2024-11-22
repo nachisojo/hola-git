@@ -36,7 +36,14 @@ a{
     text-decoration: none;
     color: black;
     font-size: 18px;
-    margin-left: 5px;
+}
+
+.btn{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 .mensajemail{
     color: red;
@@ -56,6 +63,7 @@ footer{
     width: 100%;
 }
 .containerrecetas{
+    margin: 0 auto;
     margin-top: 150px;
     width: 100%;
     display: flex;
@@ -66,9 +74,8 @@ footer{
     display: flex;
     justify-content: space-around;
     background-color: rgba(64,64,64, 0.2);
-    width: 90%;
-    margin-left: 5%;
     margin-bottom: 50px;
+    flex-wrap: wrap;
     
 }
 .tituloarticulos{
@@ -77,6 +84,11 @@ footer{
 }
 .contenidorec{
     width: 20%;
-    height: auto;
     border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+.contenidorec img{
+    width: 100%;
 }
