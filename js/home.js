@@ -51,7 +51,7 @@ fetch('https://dummyjson.com/recipes')
                     <img src = ${comida.image}>
                     <p class = "nombre"> ${comida.name} </p>
                     <P class = "dificultad"> Nivel de dificultad: ${comida.difficulty} </p>
-                    <p class = "info"> <a class="btn" href="detalle.html?id=${comida.id}"> Ver más </a></p>
+                    <p class = "info"> <a class="botondetalle" href="detalle.html?id=${comida.id}"> Ver más </a></p>
                 </article>`;
             contenidos += contenido
         }
