@@ -7,7 +7,33 @@
     <link href="css/styles.css" rel="stylesheet"/>
     <title> Detalles de las recetas</title>
 </head>
-<body>
+<body><header>
+    <nav class="nav">
+       
+            <form class="formhome" action="resultados.html" method="get">
+                <input class="searchinput" type="text" placeholder="buscador"><br>
+                <p class="resphome"></p>
+                <button type="submit">Enviar</button>
+            </form>
+
+        <ul class="primerul">
+            <li class="li_footer"><a href="detalle.html">Detalle |</a></li>
+            <li class="li_footer"><a href="search.html"> Search-results |</a></li>
+            <li class="li_footer"><a href="categorias.html"> Categorias | </a></li>
+            <li class="li_footer"><a href="home.html">Home |</a></li>
+            <li class="li_footer"><a href="login.html">Login |</a></li>
+            <li class="li_footer"><a href="registro.html"> Registro </a></li>
+        </ul>
+    </nav>
+    <img class="ratatouille" src="imgs/ratatouille.jpg"/>
+</header>
+<h1 class="tituloarticulos"><bold>RECETAS DE COCINA</bold></h1>
+<main class="articulosprincipales">
+    <section class="containerrecetas">
+       
+    </section>
+</main>
+
     <section class="Detalle">
         <div class="imagen_receta"> </div>
         <article class="Instrucciones">
@@ -28,7 +54,11 @@
 
 
 
-
+    <footer>
+        <p>Alejo Baudy | Ignacio Sojo</p>
+    </footer>
+    <script src="js/home.js"></script>
+    <footer class="footer">    
     <script src="js/detalle.js"></script>
 </body>
 </html>
