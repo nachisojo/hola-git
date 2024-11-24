@@ -1,9 +1,13 @@
-let comidai = document.querySelector(".italiana");
+let queryString = location.search
+let queryStringObj = new URLSearchParams(queryString);
+let id = queryStringObj.get("tags")
+
+let comidai = "italian"
 
 fetch('https://dummyjson.com/recipes/tag/Pakistani')
 .then(res => res.json())
 .then(function(data){
-    if(tags === comidai){
+    if(id === comidai){
         data.append(comidai)
     }
 });
