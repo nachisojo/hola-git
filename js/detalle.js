@@ -5,7 +5,7 @@ let id = queryStringObj.get("id")
 let nombreDetalle= document.querySelector(".nombre_detalle")
 let imagenDetalle = document.querySelector(".imagen_detalle")
 let instruccionesDetalle = document.querySelector(".instrucciones_detalle")
-let tiempo_coccionDetalle = document.querySelector(".tiempo_detalle")
+let tiempo_coccionDetalle = document.querySelector(".tiempo_coccion")
 let categoriasDetalle = document.querySelector(".categorias_detalle")
 
 let detalleIndividual={
