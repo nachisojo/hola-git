@@ -15,7 +15,7 @@ let detalleIndividual={
     cookTimeMinutes: "",
     mealType: "",
 }
-fetch(https://dummyjson.com/recipes/${id})
+fetch(`https://dummyjson.com/recipes/${id}`)
 .then(function(response) {
     return response.json()
   })
