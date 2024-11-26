@@ -3,6 +3,9 @@
 }
 header{
     background-color: rgba(160,160,160, 0.5);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 .ratatouille{
     border-radius: 40%;
@@ -19,16 +22,13 @@ header{
 
 }
 
-header{
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .primerul{
     list-style-type: none;
     width: 100%;
     display: flex;
-    margin-left: 175px;
+    justify-content: center;
+    margin-right: 50px;
 
 }
 a{
@@ -38,7 +38,7 @@ a{
     font-size: 18px;
 }
 
-.btn{
+.botondetalle{
     background-color: black;
     padding: 10px 20px;
     color: white;
@@ -114,4 +114,73 @@ body{
     align-items: center;
     justify-content: center;
     background-color: yellow;
+}
+.formhome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerr{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+.formregistro{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+}
+.botonfinalreg{
+    justify-content: center;
+    height: 25px;
+    width: 30%;
+}
+.botonquetc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contraregistro{
+    height: 25px;
+}
+.emailregistro{
+    height: 25px;
+
+}
+.tituforr{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+}
+.tiposcomida{
+    border: 2px solid black;
+    margin: 50px 0;
+}
+.divtitulotc{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.titulostc{
+    display: flex;
+    width: 100%;
+    text-align: center;
 }

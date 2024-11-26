@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
         <nav class="nav">
            
-                <form class="formhome" action="resultados.html" method="get">
-                    <input class="searchinput" type="text" placeholder="buscador"><br>
-                    <p class="resphome"></p>
-                    <button type="submit">Enviar</button>
-                </form>
    
             <ul class="primerul">
                 <li class="li_footer"><a href="detalle.html">Detalle |</a></li>
@@ -24,22 +20,29 @@
                 <li class="li_footer"><a href="registro.html"> Registro </a></li>
             </ul>
         </nav>
+        <form class="formhome" action="resultados.html" method="get">
+            <input class="searchinput" type="text" placeholder="buscador"><br>
+            <p class="resphome"></p>
+            <button type="submit">Enviar</button>
+        </form>
         <img class="ratatouille" src="imgs/ratatouille.jpg"/>
     </header>
-    <form class="formulario" action="resultados.html" method="get">
-        <label>Email:
-            <input class="mail" type="email" name="email" /><br><br>
-        </label>
+    <h1 class="tituforr">Inicia Sesión</h1>
+    <div class="registerr">
+        <form class="formulario" action="resultados.html" method="get">
+            <label>Email:
+                <input class="emailregistro" type="email" name="email" /><br><br>
+            </label>
        
-        <label>Contraseña:
-            <input class="contras" type="password" name="contrasenia" /><br><br>
-        </label>
+            <label>Contraseña:
+                <input class="contraregistro" type="password" name="contrasenia" /><br><br>
+            </label>
         
-        <button class="botonlogin" type="submit"><a href="home.html">Enviar</a></button><br><br>
+            <button class="botonfinalreg" type="submit"><a href="home.html">Enviar</a></button><br><br>
         
-
-    </form>
-    <a href="registro.html">No tengo cuenta</a>
+            <a class="botonquetc" href="registro.html">No tengo cuenta</a>
+        </form>
+    </div>
     <footer>
         <p>Alejo Baudy | Ignacio Sojo</p>
     </footer>
