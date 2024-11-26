@@ -1,6 +1,3 @@
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("tags");
 
 let comidai = document.querySelector(".tiposcomida");
 categoriacomida = "";

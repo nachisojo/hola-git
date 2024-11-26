@@ -184,3 +184,14 @@ body{
     width: 100%;
     text-align: center;
 }
+.section_recetas{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagen_detalle img{
+    width: 500px;
+    height: 500px;
+}
+
