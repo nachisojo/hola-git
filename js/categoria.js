@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/recipes/tag/${tagg}`)
                 <img class="imagenunidad" src =${comidaii.image}>
                 <h2 class="titulitounidad">${comidaii.name}</h2>
                 <p class="difiunidad">Dificultad: ${comidaii.difficulty}</p>
-                <p class = "detalleunidad"> <a class="botonunidad" href="detalle.html?id=${comida.id}"> Ver más </a></p>
+                <p class = "detalleunidad"> <a class="botonunidad" href="detalle.html?id=${comidaii.id}"> Ver más </a></p>
             </article>
             `;
             categoriaunidad += cat;
