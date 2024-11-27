@@ -28,7 +28,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-right: 50px;
+    text-align: center;
 
 }
 a{
@@ -179,7 +179,7 @@ body{
     justify-content: center;
     margin-top: 40px;
 }
-.titulostc{
+.titulotc{
     display: flex;
     width: 100%;
     text-align: center;
@@ -192,8 +192,10 @@ body{
     border: 2px solid black;
 }
 .imagen_detalle img{
-    width: 500px;
-    height: 500px;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    
     padding: 20px 0;
 }
 .instrucciones_detalle h3{
@@ -201,4 +203,22 @@ body{
 }
 .nombre_detalle{
     text-align: center;
+}
+
+@media(max-width: 420px){
+    .primerul{
+        flex-wrap: wrap;
+        
+    }
+  
+    .BotonComida{
+        width: 30%;
+    }
+    .titulotc{
+        text-align: center;
+    }
+    .contenidorec{
+        width: 40%;
+    }
+
 }
