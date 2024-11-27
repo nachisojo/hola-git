@@ -188,10 +188,17 @@ body{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    border: 2px solid black;
 }
 .imagen_detalle img{
     width: 500px;
     height: 500px;
+    padding: 20px 0;
 }
-
+.instrucciones_detalle h3{
+    text-align: center;
+}
+.nombre_detalle{
+    text-align: center;
+}
