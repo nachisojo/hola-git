@@ -4,6 +4,7 @@ let home = document.querySelector(".home")
 let searchinput = document.querySelector(".searchinput")
 
 
+let containerrecetas = document.querySelector(".containerrecetas");
  
 fetch('https://dummyjson.com/recipes')
     .then(function (response){
@@ -11,7 +12,6 @@ fetch('https://dummyjson.com/recipes')
     })
     
     .then(function (data){   
-        let containerrecetas = document.querySelector(".containerrecetas");
         let contenidos = '';
         for (let i=0; i < 10; i++){
             let comida = data.recipes[i];
