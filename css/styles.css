@@ -184,7 +184,7 @@ body{
     width: 100%;
     text-align: center;
 }
-.section_recetas{
+.section_detalle{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
