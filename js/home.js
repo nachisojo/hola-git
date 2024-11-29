@@ -37,7 +37,7 @@ fetch('https://dummyjson.com/recipes')
         e.preventDefault();
         let errors= false
         if (search2.value === ""){
-            home.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+            home.innerText= "Completar campo"
             home.style.display = "block"
             errors = true
         }else  
@@ -45,7 +45,7 @@ fetch('https://dummyjson.com/recipes')
      
         
         if (search2.value.length <4){
-            home.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+            home.innerText= "Mínimo de letras: 3"
             home.style.display = "block"
             errors = true
         }else  
