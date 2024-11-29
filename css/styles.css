@@ -212,6 +212,22 @@ body{
     text-align: center;
 }
 
+.get_more{
+    background-color: black;
+    color: white;   
+    padding: 5px;
+    align-self: center;
+}
+.divbotonmas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.searchfinal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 @media(max-width: 420px){
     .primerul{
         flex-wrap: wrap;
@@ -227,5 +243,5 @@ body{
     .contenidorec{
         width: 40%;
     }
-
+    
 }
