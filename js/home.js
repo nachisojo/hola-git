@@ -31,3 +31,13 @@ fetch('https://dummyjson.com/recipes')
     .catch(function (error){
         console.log("Mi error fue", error);
     })
+    formuhome.addEventListener('click', function(e){
+        e.preventDefault();
+        if(searchinput.value == ""){
+            home.style.display = "block";
+            resphomee.innerText = "Tenes que completar el campo.";
+        }if(e.length < 3){
+            home.style.display = "block";
+            resphomee.innerText = "Tiene que tener más de tres dígitos el campo."
+        }
+    })
