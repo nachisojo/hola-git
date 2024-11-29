@@ -2,11 +2,11 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let query = queryStringObj.get("q");
 let searchh = document.querySelector(".searchfinal")
-
+let comidas_search = ""
 fetch(`https://dummyjson.com/recipes/search?q=${query}`)
 .then(res => res.json())
 .then(function(data){
-    let seearch = '';
+    
     for (let i=0; i < data.recipes.length ; i++){
         let seaarch = data.recipes[i];
         
@@ -17,8 +17,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${query}`)
                 <P class = "dificultad"> Nivel de dificultad: ${seaarch.difficulty} </p>
                 <p class = "info"> <a class="botondetalle" href="detalle.html?id=${seaarch.id}"> Ver más </a></p>
             </article>`;
-        seearch += ressearch
+        comidas_search += ressearch
     }
-    searchh.innerHTML = seearch;
+    searchh.innerHTML = comidas_search
 
 });

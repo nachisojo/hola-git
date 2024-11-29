@@ -1,6 +1,5 @@
 let formuhome = document.querySelector(".formhome")
 let resphomee = document.querySelector(".resphome")
-let home = document.querySelector(".home")
 let searchinput = document.querySelector(".searchinput")
 
 
@@ -31,13 +30,28 @@ fetch('https://dummyjson.com/recipes')
     .catch(function (error){
         console.log("Mi error fue", error);
     })
-    formuhome.addEventListener('click', function(e){
+
+    let search2 = document.getElementById("buscador")
+    let home = document.querySelector(".home")
+    formuhome.addEventListener('submit', function(e){
         e.preventDefault();
-        if(searchinput.value == ""){
-            home.style.display = "block";
-            resphomee.innerText = "Tenes que completar el campo.";
-        }if(e.length < 3){
-            home.style.display = "block";
-            resphomee.innerText = "Tiene que tener más de tres dígitos el campo."
+        let errors= false
+        if (search2.value === ""){
+            home.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+            home.style.display = "block"
+            errors = true
+        }else  
+        home.style.display = "none"
+     
+        
+        if (search2.value.length <4){
+            home.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+            home.style.display = "block"
+            errors = true
+        }else  
+        home.style.display = "none"
+    
+        if (!errors){
+        this.submit()
         }
     })
